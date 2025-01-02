@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const validateEnvironment = () => {
-    const requiredEnvVars = ['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'];
+    const requiredEnvVars = ['HUGGING_FACE_API_KEY'];
 
     const missingVars = requiredEnvVars.filter((varName) => !process.env[varName]);
 
